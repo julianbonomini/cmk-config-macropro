@@ -4,6 +4,9 @@
 / {
     chosen {
         zmk,kscan = &default_kscan;
+        &left_encoder {
+            status = "okay";
+        };
     };
 
     default_kscan: kscan {
@@ -27,9 +30,5 @@
             RC(0,0) RC(0,1)
             RC(1,0) RC(1,1)
         >;
-    };
-
-    &left_encoder {
-        status = "okay";
     };
 };
