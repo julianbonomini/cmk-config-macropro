@@ -1,4 +1,4 @@
 if SHIELD_MACROPRO
 config ZMK_KEYBOARD_NAME
-    default "MacroPro"
+    default "macropro"
 endif
