@@ -13,7 +13,7 @@
             >;
         };
 
-        default_layer {
+        bt_layer {
             bindings = <
                 &none   &bootloader
                 &none   &bt BT_CLR
