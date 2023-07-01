@@ -1,0 +1,2 @@
+config SHIELD_MACROPRO
+    def_bool $(shields _list_contains, MacroPro)
