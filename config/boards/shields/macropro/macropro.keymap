@@ -12,5 +12,12 @@
                 &kp C   &kp D
             >;
         };
+
+        default_layer {
+            bindings = <
+                &none   &bootloader
+                &none   &bt BT_CLR
+            >;
+        };
     };
 };
