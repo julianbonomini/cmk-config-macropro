@@ -1,3 +1,5 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+
 / {
     chosen {
         zmk,kscan = &default_kscan;
@@ -13,5 +15,16 @@
 
         col-gpios = <&pro_micro 16 GPIO_ACTIVE_HIGH>,
                     <&pro_micro 10 GPIO_ACTIVE_HIGH>;
+    };
+
+    default_transform: matrix_transform {
+        compatible = "zmk,matrix-transform";
+        rows = <2>;
+        columns = <2>;
+
+        map = <
+            RC(0,0) RC(0,1)
+            RC(1,0) RC(1,1)
+        >;
     };
 };
