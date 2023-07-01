@@ -2,3 +2,5 @@ if SHIELD_MACROPRO
 config ZMK_KEYBOARD_NAME
     default "macropro"
 endif
+CONFIG_EC11=y
+CONFIG_EC11_TRIGGER_GLOBAL_THREAD=y

@@ -9,8 +9,8 @@
         label = "LEFT_ENCODER";
         a-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <2>;
-        status = "okay";
+        resolution = <4>;
+        status = "disabled";
     };
 
     sensors {
