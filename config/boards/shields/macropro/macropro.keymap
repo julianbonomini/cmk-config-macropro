@@ -15,11 +15,11 @@
             bindings = <&kp>, <&kp>;
         };
 
-        rot_macro: behavior_sensor_rotate_macro {
-            compatible = "zmk,behavior-sensor-rotate";
+        rot_macro: rot_macro {
+            compatible = "zmk,behavior-sensor-rotate-var";
             label = "ENC_MACRO";
             #sensor-binding-cells = <2>;
-            bindings = <&safary_tab_left>, <&safary_tab_right>;
+            bindings = <&macropro_k1>, <&safary_tab_right>;
         };`
     };
 
@@ -74,9 +74,9 @@
         default_layer {
             bindings = <
                 &kp A   &kp B
-                &macropro_k1   &kt LEFT_COMMAND
+                &macropro_k1   &kp LEFT_COMMAND
             >;
-            sensor-bindings = <&rot_kp TAB LEFT_ARROW &rot_kp UP_ARROW DOWN_ARROW>;
+            sensor-bindings = <&rot_kp TAB LEFT_ARROW &rot_macro UP_ARROW DOWN_ARROW>;
         };
 
         bt_layer {
