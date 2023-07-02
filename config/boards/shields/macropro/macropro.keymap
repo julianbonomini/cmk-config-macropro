@@ -15,7 +15,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        rot_macro: behavior_sensor_rotate_kp {
+        rot_macro: behavior_sensor_rotate_macro {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENC_MACRO";
             #sensor-binding-cells = <2>;
