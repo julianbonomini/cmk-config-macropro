@@ -24,8 +24,26 @@
             bindings
                 = <&macro_press &kp LEFT_COMMAND>
                 , <&macro_tap &kp C>
+                , <&macro_tap &kp RIGHT_ARROW>
                 , <&macro_tap &kp V>
                 , <&macro_release &kp LEFT_COMMAND>
+                ;
+        };
+
+        macropro_k1: macropro_k1 {
+            label = "macropro_k1";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LEFT_COMMAND>
+                , <&macro_press &kp LEFT_SHIFT>
+                , <&macro_press &kp LEFT_ALT>
+                , <&macro_press &kp LEFT_OPTION>
+                , <&macro_tap &kp NUMBER_1>
+                , <&macro_release &kp LEFT_COMMAND>
+                , <&macro_release &kp LEFT_SHIFT>
+                , <&macro_release &kp LEFT_ALT>
+                , <&macro_release &kp LEFT_OPTION>
                 ;
         };
     };
@@ -36,7 +54,7 @@
         default_layer {
             bindings = <
                 &kp A   &kp B
-                &kp LEFT_ALT   &copy_paste
+                &macropro_k1   &copy_paste
             >;
             sensor-bindings = <&rot_kp LEFT_ARROW RIGHT_ARROW &rot_kp UP_ARROW DOWN_ARROW>;
         };
