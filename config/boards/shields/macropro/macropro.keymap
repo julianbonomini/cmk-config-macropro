@@ -21,7 +21,7 @@
                 &kp A   &kp B
                 &kp C   &kp D
             >;
-            sensor-bindings = <&rot_kp LEFT_ARROW RIGHT_ARROW>;
+            sensor-bindings = <&rot_kp LEFT_ARROW RIGHT_ARROW &rot_kp UP_ARROW DOWN_ARROW>;
         };
 
         bt_layer {
@@ -29,7 +29,7 @@
                 &none   &bootloader
                 &none   &bt BT_CLR
             >;
-            sensor-bindings = <&rot_kp LEFT_ARROW RIGHT_ARROW>;
+            sensor-bindings = <&rot_kp LEFT_ARROW RIGHT_ARROW &rot_kp UP_ARROW DOWN_ARROW>;
         };
     };
 };
