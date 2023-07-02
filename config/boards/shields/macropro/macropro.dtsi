@@ -4,8 +4,8 @@
         label = "LEFT_ENCODER";
         a-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <1>;
-        steps = <20>;
+        resolution = <2>;
+        steps = <36>;
         status = "okay";
     };
 
@@ -14,8 +14,8 @@
         label = "LEFT_ENCODER";
         a-gpios = <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <1>;
-        steps = <20>;
+        resolution = <2>;
+        steps = <36>;
         status = "okay";
     };
 
