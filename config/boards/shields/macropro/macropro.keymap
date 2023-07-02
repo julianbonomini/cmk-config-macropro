@@ -22,7 +22,7 @@
         default_layer {
             bindings = <
                 &kp A   &kp B
-                &mo 1   &kp D
+                &mo BT   &kp D
             >;
             sensor-bindings = <&rot_kp LEFT_ARROW RIGHT_ARROW &rot_kp UP_ARROW DOWN_ARROW>;
         };
