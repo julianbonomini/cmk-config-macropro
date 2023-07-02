@@ -38,12 +38,12 @@
                 = <&macro_press &kp LEFT_COMMAND>
                 , <&macro_press &kp LEFT_SHIFT>
                 , <&macro_press &kp LEFT_ALT>
-                , <&macro_press &kp LEFT_OPTION>
+                , <&macro_press &kp LEFT_CONTROL>
                 , <&macro_tap &kp NUMBER_1>
                 , <&macro_release &kp LEFT_COMMAND>
                 , <&macro_release &kp LEFT_SHIFT>
                 , <&macro_release &kp LEFT_ALT>
-                , <&macro_release &kp LEFT_OPTION>
+                , <&macro_release &kp LEFT_CONTROL>
                 ;
         };
     };
