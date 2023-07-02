@@ -16,13 +16,27 @@
         };
     };
 
+    macros {
+        copy_paste: copy_paste {
+            label = "copy_paste_macro";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LEFT_CONTROL>
+                , <&macro_tap &kp C>
+                , <&macro_tap &kp V>
+                , <&macro_release &kp LEFT_CONTROL>
+                ;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
                 &kp A   &kp B
-                &mo BT   &kp D
+                &kt LEFT_ALT   <&zed_em_kay>
             >;
             sensor-bindings = <&rot_kp LEFT_ARROW RIGHT_ARROW &rot_kp UP_ARROW DOWN_ARROW>;
         };
