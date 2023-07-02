@@ -7,11 +7,19 @@
     left_encoder: encoder_left {
         compatible = "alps,ec11";
         label = "LEFT_ENCODER";
-        a-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        a-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <2>;
         status = "okay";
     };
+
+    sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder>;
+    };
+};
+
+/ {
 
     behaviors {
         rot_kp: behavior_sensor_rotate_kp {
@@ -22,14 +30,9 @@
         };
     };
 
-    sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder>;
-    };
-
     keymap {
         compatible = "zmk,keymap";
-        sensor-bindings = <&rot_kp PG_UP PG_DN>;
+        sensor-bindings = <&rot_kp LEFT_ARROW RIGHT_ARROW>;
 
         default_layer {
             bindings = <
