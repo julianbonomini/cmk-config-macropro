@@ -2,6 +2,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define DEFAULT 0
+#define BT     1
+
 / {
 
     behaviors {
@@ -19,7 +22,7 @@
         default_layer {
             bindings = <
                 &kp A   &kp B
-                &kp C   &kp D
+                &mo 1   &kp D
             >;
             sensor-bindings = <&rot_kp LEFT_ARROW RIGHT_ARROW &rot_kp UP_ARROW DOWN_ARROW>;
         };
