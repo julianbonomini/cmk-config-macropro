@@ -36,7 +36,7 @@
         default_layer {
             bindings = <
                 &kp A   &kp B
-                &kt LEFT_ALT   <&zed_em_kay>
+                &kt LEFT_ALT   &copy_paste
             >;
             sensor-bindings = <&rot_kp LEFT_ARROW RIGHT_ARROW &rot_kp UP_ARROW DOWN_ARROW>;
         };
