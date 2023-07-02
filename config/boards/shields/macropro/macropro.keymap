@@ -40,32 +40,6 @@
                 , <&macro_release &kp LEFT_CONTROL>
                 ;
         };
-
-        safary_tab_left: safary_tab_left {
-            label = "safary_tab_left";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LEFT_COMMAND>
-                , <&macro_press &kp LEFT_SHIFT>
-                , <&macro_tap &kp LEFT_ARROW>
-                , <&macro_release &kp LEFT_COMMAND>
-                , <&macro_release &kp LEFT_SHIFT>
-                ;
-        };
-
-        safary_tab_right: safary_tab_right {
-            label = "safary_tab_right";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LEFT_COMMAND>
-                , <&macro_press &kp LEFT_SHIFT>
-                , <&macro_tap &kp RIGHT_ARROW>
-                , <&macro_release &kp LEFT_COMMAND>
-                , <&macro_release &kp LEFT_SHIFT>
-                ;
-        };
     };
 
     keymap {
@@ -76,7 +50,7 @@
                 &kp A   &kp B
                 &macropro_k1   &kp LEFT_COMMAND
             >;
-            sensor-bindings = <&rot_kp TAB LEFT_ARROW &rot_macro>;
+            sensor-bindings = <&rot_kp TAB LS(TAB) &rot_kp LG(LS(RIGHT_ARROW)) LG(LS(LEFT_ARROW))>;
         };
 
         bt_layer {
