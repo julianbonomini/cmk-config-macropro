@@ -43,13 +43,11 @@
     };
 
     keymap {
-        compatible = "zmk,keymap";
+        compatible = "zmk,keymap";l
 
         default_layer {
             bindings = <
-                &kp D &kp C &kp B &kp A
-                &kp H &kp G &kp F &kp E
-                &kp L &kp K &kp J &kp I
+                &kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L
             >;
             sensor-bindings = <&rot_kp TAB LS(TAB) &rot_kp LG(LS(RIGHT_ARROW)) LG(LS(LEFT_ARROW))>;
         };
