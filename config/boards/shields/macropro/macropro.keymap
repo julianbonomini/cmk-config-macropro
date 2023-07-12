@@ -19,7 +19,7 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "rot_macro";
             #sensor-binding-cells = <2>;
-            bindings = <&macropro_k1>, <&macropro_k1>;
+            bindings = <&macropro N1>, <&macropro N2>;
         };
     };
 
@@ -48,7 +48,9 @@
 
         default_layer {
             bindings = <
-                &kp N4 &kp N3 &kp N2 &kp N1 &kp N5 &kp N7 &kp N9 &kp E &kp N6 &kp N8 &kp T &kp W
+                &kp N4 &kp N3 &kp N2 &kp N1
+                &kp N5 &kp N7 &kp N9 &kp E
+                &kp N6 &kp N8 &kp T &kp W
             >;
             sensor-bindings = <&rot_kp TAB LS(TAB) &rot_kp RIGHT_ARROW LEFT_ARROW &rot_kp TAB LS(TAB) &rot_kp LG(LS(RIGHT_ARROW)) LG(LS(LEFT_ARROW))>;
         };
