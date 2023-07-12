@@ -47,7 +47,7 @@
 
         default_layer {
             bindings = <
-                &kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L
+                &kp NUMBER_4 &kp NUMBER_3 &kp NUMBER_2 &kp NUMBER_1 &kp NUMBER_5 &kp NUMBER_9 &kp NUMBER_6 &kp NUMBER_10 &kp NUMBER_7 &kp NUMBER_11 &kp NUMBER_8 &kp NUMBER_12
             >;
             sensor-bindings = <&rot_kp TAB LS(TAB) &rot_kp LG(LS(RIGHT_ARROW)) LG(LS(LEFT_ARROW))>;
         };
