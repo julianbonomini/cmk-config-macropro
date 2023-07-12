@@ -47,7 +47,7 @@
 
         default_layer {
             bindings = <
-                &kp LG(LS(LC(LA(N4)))) &kp LG(LS(LC(LA(N3)))) &kp LG(LS(LC(LA(N2)))) &kp LG(LS(LC(LA(N1))))
+                &kp LG(LS(LC(LA(N4)))) &kp LEFT_ALT &kp LG(LS(LC(LA(N2)))) &kp LEFT_GUI
                 &kp LG(LS(LC(LA(N5)))) &kp LG(LS(LC(LA(N7)))) &kp LG(LS(LC(LA(N9)))) &kp LG(LS(LC(LA(E))))
                 &kp LG(LS(LC(LA(N6)))) &kp LG(LS(LC(LA(N8)))) &kp LG(LS(LC(LA(T)))) &kp LG(LS(LC(LA(W))))
             >;
